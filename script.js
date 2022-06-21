@@ -1,5 +1,7 @@
-for(i=2; i<=10; i++){
-	if (i%2==0){
-		alert(i);
+let num=prompt("Введите число больше 100", '');;
+while (num<=100){
+	if (num==null) {
+		break;
 	}
+	num=prompt("Введите число больше 100", '');
 }
