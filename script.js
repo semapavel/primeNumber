@@ -1,4 +1,8 @@
-let num;
-do {
-	num = prompt("Введите число больше 100?", 0);
-} while (num <= 100 && num);
+let num = prompt("введите число", '');
+primeNum:
+for (i=2; i<=num;i++){
+	for(j=2;j<=Math.sqrt(i);j++){
+		if(i%j==0) continue primeNum;
+	}
+	alert(i);
+}
