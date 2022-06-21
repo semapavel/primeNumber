@@ -1,15 +1,5 @@
-let name = prompt("Кто там?", '');
-if (name === 'Админ') {
-	let password = prompt('Пароль?', '');
-	if (password === 'Я главный') {
-		alert( 'Здравствуйте!' );
-	} else if (password === '' || password === null) {
-		alert( 'Отменено' );
-	} else {
-		alert( 'Неверный пароль' );
+for(i=2; i<=10; i++){
+	if (i%2==0){
+		alert(i);
 	}
-} else if (name === '' || name === null) {
-	alert( 'Отменено' );
-} else {
-	alert( "Я вас не знаю" );
 }
